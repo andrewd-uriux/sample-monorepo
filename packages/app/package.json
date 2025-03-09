@@ -32,7 +32,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git@github.com:wixplosives/sample-monorepo.git",
+    "url": "git@github.com:andrewd-uriux/sample-monorepo.git",
     "directory": "packages/app"
   },
   "private": true,
