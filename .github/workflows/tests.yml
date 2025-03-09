@@ -18,6 +18,6 @@ jobs:
         with:
           node-version: 22
       - run: pnpm ci
-      - run: pnpm test∂
+      - run: pnpm test
         env:
           CI: true
