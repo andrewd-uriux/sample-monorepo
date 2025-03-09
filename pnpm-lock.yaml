@@ -72,6 +72,45 @@ importers:
         specifier: ^5.2.0
         version: 5.2.0(webpack-cli@6.0.1)(webpack@5.98.0)
 
+  packages/app:
+    dependencies:
+      '@andrewd-uriux/components':
+        specifier: file:../components
+        version: link:../components
+      react:
+        specifier: '>=18'
+        version: 19.0.0
+      react-dom:
+        specifier: '>=18'
+        version: 19.0.0(react@19.0.0)
+      sanitize.css:
+        specifier: ^13.0.0
+        version: 13.0.0
+
+  packages/components:
+    dependencies:
+      react:
+        specifier: '>=18'
+        version: 19.0.0
+
+  packages/server:
+    dependencies:
+      '@andrewd-uriux/app':
+        specifier: file:../app
+        version: link:../app
+      compression:
+        specifier: ^1.8.0
+        version: 1.8.0
+      express:
+        specifier: ^4.21.2
+        version: 4.21.2
+      react:
+        specifier: '>=18'
+        version: 19.0.0
+      react-dom:
+        specifier: '>=18'
+        version: 19.0.0(react@19.0.0)
+
 packages:
 
   '@discoveryjs/json-ext@0.6.3':
@@ -1816,6 +1855,9 @@ packages:
 
   safer-buffer@2.1.2:
     resolution: {integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==}
+
+  sanitize.css@13.0.0:
+    resolution: {integrity: sha512-ZRwKbh/eQ6w9vmTjkuG0Ioi3HBwPFce0O+v//ve+aOq1oeCy7jMV2qzzAlpsNuqpqCBjjriM1lbtZbF/Q8jVyA==}
 
   scheduler@0.25.0:
     resolution: {integrity: sha512-xFVuu11jh+xcO7JOAGJNOXld8/TcEHK/4CituBUeUb5hqxJLj9YuemAEuvm9gQ/+pgXYfbQuqAkiYu+u7YEsNA==}
@@ -4227,6 +4269,8 @@ snapshots:
       is-regex: 1.2.1
 
   safer-buffer@2.1.2: {}
+
+  sanitize.css@13.0.0: {}
 
   scheduler@0.25.0: {}
 

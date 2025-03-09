@@ -1,6 +1,6 @@
 {
-  "name": "@sample/app",
-  "version": "1.0.0",
+  "name": "@andrewd-uriux/app",
+  "version": "1.0.2",
   "type": "module",
   "exports": {
     ".": "./dist/index.js",
@@ -19,7 +19,7 @@
     "react-dom": ">=18"
   },
   "dependencies": {
-    "@sample/components": "^1.0.0",
+    "@andrewd-uriux/components": "file:../components",
     "sanitize.css": "^13.0.0"
   },
   "files": [
@@ -32,10 +32,8 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git@github.com:andrewd-uriux/sample-monorepo.git",
     "directory": "packages/app"
   },
-  "private": true,
   "publishConfig": {
     "access": "public"
   }

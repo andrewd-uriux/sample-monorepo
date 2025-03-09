@@ -1,6 +1,6 @@
 {
-  "name": "@sample/server",
-  "version": "1.0.0",
+  "name": "@andrewd-uriux/server",
+  "version": "1.0.2",
   "type": "module",
   "exports": {
     ".": "./dist/index.js",
@@ -15,7 +15,7 @@
     "react-dom": ">=18"
   },
   "dependencies": {
-    "@sample/app": "^1.0.0",
+    "@andrewd-uriux/app": "file:../app",
     "compression": "^1.8.0",
     "express": "^4.21.2"
   },
@@ -29,7 +29,6 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git@github.com:andrewd-uriux/sample-monorepo.git",
     "directory": "packages/server"
   },
   "private": true,
