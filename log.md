@@ -140,7 +140,11 @@ Note that publishing doesn't actually create a package. It just creates bumps th
 
 3. Create Packages
 
-cd
+    cd app
+    # possibly do a pnpm install
+    # manually increase version in package.json
+    pnpm publish --no-git-checks --registry=https://npm.pkg.github.com/
+
 
 
 
