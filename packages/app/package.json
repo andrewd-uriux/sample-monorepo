@@ -1,6 +1,6 @@
 {
   "name": "@andrewd-uriux/app",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "type": "module",
   "exports": {
     ".": "./dist/index.js",
@@ -32,10 +32,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
+    "url": "git@github.com:andrewd-uriux/sample-monorepo.git",
     "directory": "packages/app"
   },
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "registry": "https://npm.pkg.github.com"
   },
   "gitHead": "d99a0dee71e9393ae7e1de48412c6986ca18656e",
   "devDependencies": {
