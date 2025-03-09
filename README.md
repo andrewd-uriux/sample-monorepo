@@ -30,18 +30,18 @@ Clone repository and execute the following commands in the root:
 
 ### Included sample packages
 
-- **[@sample/components](./packages/components)**
+- **[@andrewd-uriux/components](./packages/components)**
 
   - [React](https://github.com/facebook/react) components library.
 
-- **[@sample/app](./packages/app)**
+- **[@andrewd-uriux/app](./packages/app)**
 
   - [React](https://github.com/facebook/react) application.
-  - Uses the `@sample/components` package (also inside monorepo).
+  - Uses the `@andrewd-uriux/components` package (also inside monorepo).
 
-- **[@sample/server](./packages/server)**
+- **[@andrewd-uriux/server](./packages/server)**
   - [Express](https://github.com/expressjs/express) application.
-  - Uses the `@sample/app` package (also inside monorepo).
+  - Uses the `@andrewd-uriux/app` package (also inside monorepo).
   - Listens on http://localhost:3000 (client only rendering) http://localhost:3000/server (SSR rendering).
 
 ### Basic structure and configurations
@@ -105,11 +105,11 @@ New `devDependencies` can be added to the root `package.json` using npm:
 npm i <package name> -D
 ```
 
-Some packages depend on sibling packages within the monorepo. For example, in this repo, `@sample/app` depends on `@sample/components`. This relationship is just a normal dependency, and can be described in the `package.json` of `app` like so:
+Some packages depend on sibling packages within the monorepo. For example, in this repo, `@andrewd-uriux/app` depends on `@andrewd-uriux/components`. This relationship is just a normal dependency, and can be described in the `package.json` of `app` like so:
 
 ```json
   "dependencies": {
-    "@sample/components": "<package version>"
+    "@andrewd-uriux/components": "<package version>"
   }
 ```
 

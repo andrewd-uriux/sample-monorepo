@@ -1,5 +1,5 @@
 import type React from "react";
-import { Main } from "@sample/components";
+import { Main } from "../../components/dist/main.js";
 
 export interface AppProps {
   text: string;

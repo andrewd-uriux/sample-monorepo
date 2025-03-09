@@ -1,9 +1,7 @@
 {
   "name": "sample-monorepo",
+  "version": "1.0.1",
   "type": "module",
-  "workspaces": [
-    "packages/*"
-  ],
   "scripts": {
     "clean": "rimraf -g \"./packages/*/dist\"",
     "build": "tsc --build",
@@ -12,9 +10,9 @@
     "test": "npm run test:only",
     "test:only": "node --test --enable-source-maps",
     "start": "npm run start:client",
-    "start:client": "npm run -w @sample/app start",
-    "prestart:server": "npm run -w @sample/app bundle:prod",
-    "start:server": "npm run -w @sample/server start",
+    "start:client": "npm run -w @andrewd-uriux/app start",
+    "prestart:server": "npm run -w @andrewd-uriux/app bundle:prod",
+    "start:server": "npm run -w @andrewd-uriux/server start",
     "prettify": "prettier . --write"
   },
   "devDependencies": {
@@ -44,6 +42,5 @@
     "node": ">=22",
     "npm": ">=8"
   },
-  "license": "MIT",
-  "private": true
+  "license": "MIT"
 }

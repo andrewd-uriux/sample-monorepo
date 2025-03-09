@@ -1,7 +1,7 @@
 import { describe, it } from "node:test";
 import assert from "node:assert/strict";
 import { renderToString } from "react-dom/server";
-import { App } from "@sample/app";
+import { App } from "@andrewd-uriux/app";
 
 describe("<App />", () => {
   it("renders without throwing on the server", () => {

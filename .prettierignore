@@ -1,2 +1,4 @@
 dist
 /tsconfig.base.json
+
+/.nx/workspace-data

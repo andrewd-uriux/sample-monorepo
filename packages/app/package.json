@@ -19,7 +19,7 @@
     "react-dom": ">=18"
   },
   "dependencies": {
-    "@andrewd-uriux/components": "file:../components",
+    "@andrewd-uriux/components": "^1.0.2",
     "sanitize.css": "^13.0.0"
   },
   "files": [
@@ -36,5 +36,6 @@
   },
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "gitHead": "d99a0dee71e9393ae7e1de48412c6986ca18656e"
 }
