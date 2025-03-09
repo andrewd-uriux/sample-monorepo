@@ -2,16 +2,16 @@
 
 [![Build Status](https://github.com/wixplosives/sample-monorepo/workflows/tests/badge.svg)](https://github.com/wixplosives/sample-monorepo/actions)
 
-Sample monorepo setup with npm workspaces and typescript project references.
+Sample monorepo setup with pnpm workspaces and typescript project references.
 
 ## Getting started
 
 Clone repository and execute the following commands in the root:
 
-- `npm i`
-- `npm run build`
-- `npm start` - to see the client running in dev-mode (non-minified; with source-maps)
-- `npm run start:server` - to see server running (with SSR; client is minified with source-maps)
+- `pnpm i`
+- `pnpm run build`
+- `pnpm start` - to see the client running in dev-mode (non-minified; with source-maps)
+- `pnpm run start:server` - to see server running (with SSR; client is minified with source-maps)
 
 ## Setup explained
 
@@ -22,7 +22,7 @@ Clone repository and execute the following commands in the root:
   - Packages are automatically linked together, meaning you can do cross-package work within the repo.
   - `devDependencies` are common, and only appear in the root `package.json`. Easier to manage and upgrade.
   - Each package has its own `scripts` and `dependencies`. They are being installed in the root `node_modules`, using the same deduping mechanism `npm` uses for single packages.
-  - Adding new packages is as simple as dropping an existing package in the `packages` folder, and re-running `npm i`.
+  - Adding new packages is as simple as dropping an existing package in the `packages` folder, and re-running `pnpm i`.
 
 - Sources and tests are written in strict [TypeScript](https://github.com/Microsoft/TypeScript).
 
@@ -55,9 +55,9 @@ packages/
         test.spec.ts
       index.ts
       tsconfig.json      // package-specific config, built to "some-package/dist"
-    LICENSE              // license file. included in npm artifact
+    LICENSE              // license file. included in pnpm artifact
     package.json         // package-specific deps and scripts
-    README.md            // shown in npmjs.com. included in npm artifact
+    README.md            // shown in npmjs.com. included in pnpm artifact
 
 .eslintignore            // eslint (linter) ignored directories/files
 .eslintrc                // eslint (linter) configuration
@@ -102,7 +102,7 @@ Taking this into account, we use the following dependency structure:
 New `devDependencies` can be added to the root `package.json` using npm:
 
 ```sh
-npm i <package name> -D
+pnpm i <package name> -D
 ```
 
 Some packages depend on sibling packages within the monorepo. For example, in this repo, `@andrewd-uriux/app` depends on `@andrewd-uriux/components`. This relationship is just a normal dependency, and can be described in the `package.json` of `app` like so:

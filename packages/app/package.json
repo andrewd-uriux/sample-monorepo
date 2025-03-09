@@ -7,19 +7,19 @@
     "./package.json": "./package.json"
   },
   "scripts": {
-    "build": "npm run bundle:prod",
+    "build": "pnpm run bundle:prod",
     "bundle:prod": "webpack --mode production",
     "bundle:dev": "webpack --mode development --devtool source-map",
     "test": "node --test --enable-source-maps",
     "start": "webpack serve --mode development --open",
-    "prepack": "npm run build"
+    "prepack": "pnpm run build"
   },
   "peerDependencies": {
     "react": ">=18",
     "react-dom": ">=18"
   },
   "dependencies": {
-    "@andrewd-uriux/components": "^1.0.2",
+    "@andrewd-uriux/components": "file:../components",
     "sanitize.css": "^13.0.0"
   },
   "files": [
